@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mes projets open source</title>
+  <meta name="description" content="Présentation de mes projets open source, dont l'extension Chrome mastationservice.fr pour consulter le prix des carburants en France.">
+  <style>
+    :root {
+      --bg: #f7f8fa;
+      --card: #ffffff;
+      --text: #1d2330;
+      --muted: #5b6475;
+      --accent: #0f7b5f;
+      --accent-soft: #e3f3ee;
+      --border: #e3e6ec;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #12151b;
+        --card: #1b2029;
+        --text: #e8ebf1;
+        --muted: #9aa3b5;
+        --accent: #4cc9a0;
+        --accent-soft: #1d3a32;
+        --border: #2a313d;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      line-height: 1.6;
+    }
+    main {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 64px 20px 48px;
+    }
+    header h1 {
+      font-size: clamp(1.8rem, 4vw, 2.4rem);
+      margin: 0 0 8px;
+      letter-spacing: -0.02em;
+    }
+    header p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 1.1rem;
+    }
+    h2 {
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--muted);
+      margin: 48px 0 16px;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 24px;
+    }
+    .card-head {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 12px;
+    }
+    .icon {
+      flex: none;
+      width: 44px;
+      height: 44px;
+      border-radius: 10px;
+      background: var(--accent-soft);
+      color: var(--accent);
+      display: grid;
+      place-items: center;
+    }
+    .card h3 { margin: 0; font-size: 1.2rem; }
+    .tag {
+      display: inline-block;
+      font-size: 0.75rem;
+      padding: 2px 8px;
+      border-radius: 999px;
+      background: var(--accent-soft);
+      color: var(--accent);
+      margin-top: 2px;
+    }
+    .card p { margin: 0 0 12px; }
+    a { color: var(--accent); text-underline-offset: 3px; }
+    a:hover { text-decoration-thickness: 2px; }
+    .soon {
+      border: 1px dashed var(--border);
+      border-radius: 14px;
+      padding: 20px 24px;
+      color: var(--muted);
+    }
+    footer {
+      margin-top: 56px;
+      color: var(--muted);
+      font-size: 0.9rem;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Mes projets open source</h1>
+      <p>Des outils pratiques, libres et ouverts à tous.</p>
+    </header>
+
+    <h2>Projets</h2>
+
+    <article class="card">
+      <div class="card-head">
+        <div class="icon" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18"/>
+            <path d="M2 22h14"/>
+            <path d="M6 7h6"/>
+            <path d="M15 10h2a2 2 0 0 1 2 2v5a1.5 1.5 0 0 0 3 0V9l-3-3"/>
+          </svg>
+        </div>
+        <div>
+          <h3>Extension Chrome mastationservice.fr</h3>
+          <span class="tag">Extension Chrome</span>
+        </div>
+      </div>
+      <p>
+        Une extension pour Google Chrome qui affiche en un clic le prix des carburants
+        dans les stations-service en France. Idéal pour comparer et faire le plein au meilleur tarif.
+      </p>
+      <p>
+        Les données proviennent du site
+        <a href="https://www.mastationservice.fr">meilleur prix de l'essence et du gasoil en France</a>.
+      </p>
+    </article>
+
+    <div class="soon" style="margin-top: 16px;">
+      <strong>D'autres projets arrivent&nbsp;!</strong><br>
+      Je publierai petit à petit d'autres projets open source sur cette page. Revenez bientôt.
+    </div>
+
+    <footer>
+      Projets publiés sous licence libre · Hébergé sur GitHub Pages
+    </footer>
+  </main>
+</body>
+</html>
